@@ -18,7 +18,7 @@ function liriApp(appName, titleString) {
 	// we put it inside of the function for security (scoping) reasons
 	var keys = require("./keys.js");
 
-	// include the npm package "request"
+	// include the npm package "request"  Ho heerew 
 	// this is used to make a get request to the APIs: OMDB
 	var request = require('request');
 
