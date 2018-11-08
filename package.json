@@ -1,12 +1,12 @@
 {
   "name": "liri-node-app",
   "version": "0.1.0",
-  "description": "Liri Node App - Week 10 - UCLA - Allan Guggenheim",
+  "description": "Liri Node App",
   "main": "keys.js",
   "dependencies": {
     "request": "^2.79.0",
     "spotify": "^0.3.0",
     "twitter": "^1.7.0"
   },
-  "homepage": "https://github.com/allanguggenheim/liri-node-app"
+  "homepage": "https://github.com/bob-williams-1/week10homework"
 }
