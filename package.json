@@ -1,7 +1,7 @@
 {
-  "name": "liri-node-app",
+  "name": "liri-app",
   "version": "0.1.0",
-  "description": "Liri Node App",
+  "description": "Liri App",
   "main": "keys.js",
   "dependencies": {
     "request": "^2.79.0",

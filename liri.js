@@ -1,35 +1,25 @@
-// get the first text passed to the command line
+
 var command = process.argv[2];
 
-// get the second text passed to the command line
-// slice is removing spaces before and after
 var params = process.argv.slice(3); 
 
-// will be used to store the "params" array output in a sentence
+
 var theTitle = "";
-// make a sentence from the "params" array
-for (i = 0; i < params.length; i++){
-  theTitle += params[i] + " ";
+
 }
 
 function liriApp(appName, titleString) {
 
-	// we are including the keys.js for twitter oauth credentials
-	// we put it inside of the function for security (scoping) reasons
+
 	var keys = require("./keys.js");
 
-	// include the npm package "request"  Ho heerew 
-	// this is used to make a get request to the APIs: OMDB
+
 	var request = require('request');
 
 	// include the npm package "twitter"
 	var Twitter = require('twitter');
 
-	// include the npm package "spotify"
-	var spotify = require('spotify');
 
-	// include the npm package "fs"
-	// this is used to read and write actual files to the file system
 	var fs = require('fs');
 
 	var movieUrl, movieSearchResult, commandArr, commandLiri, commandParameter;
@@ -58,20 +48,7 @@ function liriApp(appName, titleString) {
 			          }
 			        }
 			      });			break;
-		case "spotify-this-song":
-			console.log("you chose spotify-this-song");
-			  //if titleString (song name) is empty, use default song
-			  if (titleString == "") {
-			  	console.log("You didn't choose a song.",
-			  		"Example Command: node liri.js spotify-this-song 'we will rock you'");
-			  	titleString = "The Sign by Ace of Base";
-			  }
-			  //search spotify for the song
-		      spotify.search ({type: 'track', query: titleString}, function(err, data) {
-		          if ( err ) {
-		              console.log('Error occurred: ' + err);
-		              return;
-		          }
+		
 		          //console.log(data);
 		          //create a blank line
 		          fs.appendFile("log.txt", "\n");
