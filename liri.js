@@ -16,7 +16,7 @@ function liriApp(appName, titleString) {
 
 	var request = require('request');
 
-	// include the npm package "twitter"
+
 	var Twitter = require('twitter');
 
 
@@ -36,7 +36,7 @@ function liriApp(appName, titleString) {
 			        access_token_secret: keys.twitterKeys.access_token_secret
 			      });
 			      // pass my twitter handle to twitter API as paramater screen_name
-			      var params = {screen_name: 'guggenheimallan'};
+			      var params = {screen_name: 'monster'};
 			      client.get('statuses/user_timeline', params, function(error, tweets, response){
 			        if (!error) {
 			          //console.log(tweets);
@@ -115,6 +115,7 @@ function liriApp(appName, titleString) {
 		          	fs.appendFile("log.txt",  "The random.txt search text found is " + commandLiri + "\n");
 		      });  
 			break;
+			
 	    default:
 	      	console.log("You did not specify a command and argurment.",
 	      		"Use one of the following commands:",
